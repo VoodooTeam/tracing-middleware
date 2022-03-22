@@ -1,0 +1,55 @@
+{
+  "name": "tracing-middleware",
+  "version": "0.1.0",
+  "description": "Add a middleware to handle tracing with open tracing libs",
+  "main": "index.js",
+  "bin": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.js"
+  },
+  "files": [
+    "src/**"
+  ],
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "linter": "./node_modules/.bin/eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoodooTeam/tracing-middleware.git"
+  },
+  "keywords": [
+    "tracing",
+    "opentelemetry",
+    "jeager",
+    "span",
+    "trace",
+    "traceId",
+    "monitoring",
+    "tempo"
+  ],
+  "author": {
+    "name": "Vincent Vallet",
+    "email": "wallet77@gmail.com",
+    "url": "https://github.com/wallet77"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VoodooTeam/tracing-middleware/issues"
+  },
+  "homepage": "https://github.com/VoodooTeam/tracing-middleware#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1"
+  },
+  "dependencies": {
+  }
+}
