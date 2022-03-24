@@ -62,6 +62,7 @@
     "@opentelemetry/resources": "^1.0.1",
     "@opentelemetry/semantic-conventions": "^1.0.1",
     "@opentelemetry/tracing": "^0.24.0",
-    "debug": "^4.3.4"
+    "debug": "^4.3.4",
+    "pino": "^7.9.2"
   }
 }

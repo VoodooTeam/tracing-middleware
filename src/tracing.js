@@ -1,3 +1,6 @@
+const debug = require('debug')
+const log = debug('tracing-middleware:log')
+log.log = console.log.bind(console)
 const opentelemetry = require('@opentelemetry/api')
 const { NodeTracerProvider } = require('@opentelemetry/node')
 const { Resource } = require('@opentelemetry/resources')
@@ -54,7 +57,7 @@ module.exports = function (config, instrumentations) {
         instrumentations: instrumentations
     })
 
-    logger.info(`tracing initialized for ${options.serviceName} sending span to ${options.endpoint}`)
+    log(`tracing initialized for ${options.serviceName} sending span to ${options.endpoint}`)
     return {
         tracer: opentelemetry.trace.getTracer(config.serviceName),
         addTraceId: async (req, res) => {
