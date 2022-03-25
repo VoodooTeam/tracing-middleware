@@ -17,6 +17,7 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/jest",
     "linter": "./node_modules/.bin/eslint ./"
   },
   "repository": {
@@ -44,11 +45,13 @@
   },
   "homepage": "https://github.com/VoodooTeam/tracing-middleware#readme",
   "devDependencies": {
+    "axios": "^0.26.1",
     "eslint": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1"
+    "eslint-plugin-promise": "^5.1.1",
+    "fastify": "^3.27.4"
   },
   "dependencies": {
     "@opentelemetry/api": "^1.0.1",
@@ -63,6 +66,7 @@
     "@opentelemetry/semantic-conventions": "^1.0.1",
     "@opentelemetry/tracing": "^0.24.0",
     "debug": "^4.3.4",
+    "jest": "^27.5.1",
     "pino": "^7.9.2"
   }
 }

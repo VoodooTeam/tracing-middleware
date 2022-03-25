@@ -2,7 +2,7 @@ const { HttpInstrumentation } = require('@opentelemetry/instrumentation-http')
 const { AwsInstrumentation } = require('@opentelemetry/instrumentation-aws-sdk')
 const { MySQLInstrumentation } = require('@opentelemetry/instrumentation-mysql')
 
-module.exports = function (config) {
+module.exports = function (config = {}) {
     if (!config.serviceName) {
         config.serviceName = process.env.OTEL_SERVICE_NAME
     }
