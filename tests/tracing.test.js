@@ -61,5 +61,18 @@ describe('Tracer', () => {
             await axios.get('http://localhost:3001/test')
             expect(value).toEqual('req-1')
         })
+
+        it('should add fastify instrumentation', async () => {
+            const tracerModule = require('../index')({
+                instrumentations: {
+                    mysql: true,
+                    unknown: true
+                }
+            })
+            tracer = tracerModule.tracer
+            expect(value).toEqual('nok')
+            await axios.get('http://localhost:3001/test')
+            expect(value).toEqual('req-1')
+        })
     })
 })
