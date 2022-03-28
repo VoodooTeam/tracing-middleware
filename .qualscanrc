@@ -6,7 +6,14 @@
     },
     "dependencies-size": {
         "budget": {
-            "fail": { "dependencies": 400, "directDependencies": 15, "depth": 10 }
+            "fail": { "dependencies": 450, "directDependencies": 23, "depth": 10 }
+        }
+    },
+    "dependencies-check": {
+        "args": {
+            "ignoreMatches": [
+                "@opentelemetry/instrumentation-*"
+            ]
         }
     }
 }
