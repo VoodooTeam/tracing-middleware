@@ -17,6 +17,13 @@ It will instantiate some instrumentation libs in order to catch span for:
 * HTTP calls
 * AWS SDK
 * Mysql
+* MongoDB
+* Postgres
+* Web frameworks: Fastify, Express, Koa
+* AWS Lambda
+* Redis
+* GraphQL
+* GRPC
 
 ## Installation
 
@@ -26,6 +33,53 @@ $ npm install tracing-middleware --save
 
 ## Usage
 
+### Basic usage
+```javascript
+const tracer = require('tracing-middleware')()
+
+```
+
+### Use addTraceId method
+This method will add the traceID in the req object.
+```javascript
+const tracingModule = require('tracing-middleware')()
+
+fastify.addHook('onRequest', tracingModule.addTraceId)
+
+```
+
+### Configuration
+Example of configuration, using tempo as endpoint.
+```javascript
+const tracer = require('tracing-middleware')({
+    serviceName:: 'myService',
+    exporterEndpoint: 'http://tempo.monitoring.svc.cluster.local:14268/api/traces',
+    instrumentations: {
+        mysql: true,
+        lambda: true
+    }
+})
+
+```
+
+| Name                       | Default                            | Description                 |
+|:---------------------------|:-----------------------------------|:----------------------------|
+| serviceName                | process.env.OTEL_SERVICE_NAME      | Your service's name         |
+| exporterEndpoint           | process.env.OTEL_EXPORTER_ENDPOINT | The opentelemetry endpoint  |
+| instrumentations           |                                    | List of instrumentations    |
+| instrumentations.http      | true                               |                             |
+| instrumentations.aws       | true                               |                             |
+| instrumentations.mysql     | false                              |                             |
+| instrumentations.mongodb   | false                              |                             |
+| instrumentations.pg        | false                              |                             |
+| instrumentations.redis     | false                              |                             |
+| instrumentations.ioredis   | false                              |                             |
+| instrumentations.graphql   | false                              |                             |
+| instrumentations.koa       | false                              |                             |
+| instrumentations.express   | false                              |                             |
+| instrumentations.fastify   | false                              |                             |
+| instrumentations.lambda    | false                              |                             |
+| instrumentations.grpc      | false                              |                             |
 
 ## Compatibility
 
