@@ -89,6 +89,11 @@ const tracer = require('tracing-middleware')({
 | 16.x          | yes           | yes            |
 | 14.x          | yes           | yes            |
 
+## Debug
+```bash
+DEBUG=tracing-middleware* node myApp.js
+```
+
 ## Test
 
 ```bash
