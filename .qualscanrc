@@ -13,7 +13,9 @@
         "args": {
             "ignoreMatches": [
                 "@opentelemetry/instrumentation-*",
-                "eslint-*"
+                "eslint*",
+                "jest",
+                "typescript"
             ]
         }
     }
