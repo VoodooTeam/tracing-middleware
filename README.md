@@ -6,7 +6,7 @@
 [![Code coverage](https://img.shields.io/codecov/c/github/VoodooTeam/tracing-middleware.svg)](https://codecov.io/gh/VoodooTeam/tracing-middleware)
 [![Dependencies updates](https://img.shields.io/david/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
 [![Dependencies updates](https://img.shields.io/david/dev/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
-[![Node version](https://img.shields.io/node/v-lts/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
+[![Node version](https://img.shields.io/node/v-lts/%40voodoo.io%2Ftracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
 [![Code coverage](https://codecov.io/gh/VoodooTeam/tracing-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/VoodooTeam/tracing-middleware)
 
 # Tracing middleware with open tracing libs
