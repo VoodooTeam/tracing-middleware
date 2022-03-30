@@ -8,6 +8,7 @@ const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventi
 const { registerInstrumentations } = require('@opentelemetry/instrumentation')
 const { JaegerExporter } = require('@opentelemetry/exporter-jaeger')
 const { BatchSpanProcessor } = require('@opentelemetry/tracing')
+const pino = require('pino')
 
 module.exports = function (config, instrumentations) {
     // Enable OpenTelemetry exporters to export traces to Grafan Tempo.
@@ -21,7 +22,7 @@ module.exports = function (config, instrumentations) {
         })
     })
 
-    const logger = require('pino')()
+    const logger = pino()
     // Initialize the exporter
     const options = {
         logger: logger,
