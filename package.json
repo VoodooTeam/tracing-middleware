@@ -1,6 +1,6 @@
 {
   "name": "@voodoo.io/tracing-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add a middleware to handle tracing with open tracing libs",
   "main": "index.js",
   "bin": "./index.js",
