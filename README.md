@@ -28,7 +28,7 @@ It will instantiate some instrumentation libs in order to catch span for:
 ## Installation
 
 ```bash
-npm install tracing-middleware --save
+npm install @voodoo.io/tracing-middleware --save
 ```
 
 ## Usage
