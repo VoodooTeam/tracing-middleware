@@ -1,6 +1,6 @@
 {
   "name": "tracing-middleware",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add a middleware to handle tracing with open tracing libs",
   "main": "index.js",
   "bin": "./index.js",
