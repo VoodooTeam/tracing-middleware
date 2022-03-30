@@ -35,13 +35,13 @@ npm install @voodoo.io/tracing-middleware --save
 
 ### Basic usage
 ```javascript
-const tracer = require('tracing-middleware')()
+const tracer = require('@voodoo.io/tracing-middleware')()
 ```
 
 ### Use addTraceId method
 This method will add the traceID in the req object.
 ```javascript
-const tracingModule = require('tracing-middleware')()
+const tracingModule = require('@voodoo.io/tracing-middleware')()
 
 fastify.addHook('onRequest', tracingModule.addTraceId)
 ```
@@ -49,7 +49,7 @@ fastify.addHook('onRequest', tracingModule.addTraceId)
 ### Configuration
 Example of configuration, using tempo as endpoint.
 ```javascript
-const tracer = require('tracing-middleware')({
+const tracer = require('@voodoo.io/tracing-middleware')({
     serviceName:: 'myService',
     exporterEndpoint: 'http://tempo.monitoring.svc.cluster.local:14268/api/traces',
     instrumentations: {
