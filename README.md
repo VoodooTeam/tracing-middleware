@@ -28,7 +28,7 @@ It will instantiate some instrumentation libs in order to catch span for:
 ## Installation
 
 ```bash
-$ npm install tracing-middleware --save
+npm install tracing-middleware --save
 ```
 
 ## Usage
@@ -36,7 +36,6 @@ $ npm install tracing-middleware --save
 ### Basic usage
 ```javascript
 const tracer = require('tracing-middleware')()
-
 ```
 
 ### Use addTraceId method
@@ -45,7 +44,6 @@ This method will add the traceID in the req object.
 const tracingModule = require('tracing-middleware')()
 
 fastify.addHook('onRequest', tracingModule.addTraceId)
-
 ```
 
 ### Configuration
@@ -59,7 +57,6 @@ const tracer = require('tracing-middleware')({
         lambda: true
     }
 })
-
 ```
 
 | Name                       | Default                            | Description                 |
