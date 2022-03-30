@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/npm/v/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/releases/)
+[![GitHub release](https://img.shields.io/npm/v/%40voodoo.io%2Ftracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/releases/)
 [![GitHub license](https://img.shields.io/github/license/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/blob/master/LICENSE)
 [![Opened PR](https://img.shields.io/github/issues-pr-raw/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/pulls)
 [![Opened issues](https://img.shields.io/github/issues/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/issues)
