@@ -12,7 +12,8 @@
     "dependencies-check": {
         "args": {
             "ignoreMatches": [
-                "@opentelemetry/instrumentation-*"
+                "@opentelemetry/instrumentation-*",
+                "eslint-*"
             ]
         }
     }
