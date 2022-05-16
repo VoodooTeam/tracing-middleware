@@ -51,7 +51,7 @@ module.exports = function (config, instrumentations) {
     tracerProvider.register()
 
     registerInstrumentations({
-        instrumentations: instrumentations
+        instrumentations
     })
 
     log(`tracing initialized for ${config.serviceName} sending span to ${options.endpoint}`)
