@@ -60,6 +60,11 @@ module.exports = function (config, instrumentations) {
         addTraceId: async (req, res) => {
             const spanContext = opentelemetry.trace.getSpanContext(opentelemetry.context.active())
             req.traceId = spanContext && spanContext.traceId
+        },
+        KOAMiddleware: ({ request }, next) => {
+            const spanContext = opentelemetry.trace.getSpanContext(opentelemetry.context.active())
+            request.traceId = spanContext && spanContext.traceId
+            return next()
         }
     }
 }
