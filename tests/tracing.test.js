@@ -42,7 +42,10 @@ describe('Tracer', () => {
             })
             fastify.addHook('onRequest', addTraceId)
 
-            await fastify.listen(3001, '0.0.0.0')
+            await fastify.listen({
+                port: 3001,
+                url: '0.0.0.0'
+            })
         })
 
         afterEach(async () => {
