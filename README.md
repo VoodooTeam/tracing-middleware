@@ -1,10 +1,8 @@
-[![GitHub release](https://img.shields.io/npm/v/%40voodoo.io%2Ftracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/releases/)
+[![npm version](https://badge.fury.io/js/%40voodoo.io%2Ftracing-middleware.svg)](https://badge.fury.io/js/%40voodoo.io%2Ftracing-middleware)
 [![GitHub license](https://img.shields.io/github/license/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/blob/master/LICENSE)
 [![Opened PR](https://img.shields.io/github/issues-pr-raw/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/pulls)
 [![Opened issues](https://img.shields.io/github/issues/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware/issues)
-[![CI pipeline](https://img.shields.io/github/workflow/status/VoodooTeam/tracing-middleware/Node.js%20CI/master.svg)](https://github.com/VoodooTeam/tracing-middleware/actions?query=workflow%3A%22Node.js+CI%22)
-[![Dependencies updates](https://img.shields.io/david/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
-[![Dependencies updates](https://img.shields.io/david/dev/VoodooTeam/tracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
+[![CI pipeline](https://github.com/VoodooTeam/tracing-middleware/workflows/Node.js%20CI/badge.svg)](https://github.com/VoodooTeam/tracing-middleware/actions?query=workflow%3A%22Node.js+CI%22)
 [![Node version](https://img.shields.io/node/v-lts/%40voodoo.io%2Ftracing-middleware.svg)](https://github.com/VoodooTeam/tracing-middleware)
 [![Code coverage](https://codecov.io/gh/VoodooTeam/tracing-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/VoodooTeam/tracing-middleware)
 
