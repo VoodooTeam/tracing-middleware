@@ -6,7 +6,7 @@
     },
     "dependencies-size": {
         "budget": {
-            "fail": { "dependencies": 450, "directDependencies": 23, "depth": 10 }
+            "fail": { "dependencies": 450, "directDependencies": 23, "depth": 10, "weight": 150000000}
         }
     },
     "dependencies-check": {
