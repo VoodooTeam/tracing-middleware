@@ -83,7 +83,6 @@ const tracer = require('@voodoo.io/tracing-middleware')({
 |:-------------:|:-------------:|:--------------:|
 | 18.x          | yes           | yes            |
 | 16.x          | yes           | yes            |
-| 14.x          | yes           | yes            |
 
 ## Debug
 ```bash
