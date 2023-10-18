@@ -48,7 +48,7 @@ fastify.addHook('onRequest', tracingModule.addTraceId)
 Example of configuration, using tempo as endpoint.
 ```javascript
 const tracer = require('@voodoo.io/tracing-middleware')({
-    serviceName:: 'myService',
+    serviceName: 'myService',
     exporterEndpoint: 'http://tempo.monitoring.svc.cluster.local:14268/api/traces',
     instrumentations: {
         mysql: true,
@@ -106,3 +106,11 @@ Coverage report can be found in coverage/.
 ## License
 
 MIT
+
+## Release 
+
+In order to do the release, at the moment it's done manually, you need to get the publish token from 1password and then bump the version in the package.json file. Then you can run the following command:
+
+```bash
+npm publish
+```
