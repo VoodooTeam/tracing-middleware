@@ -45,6 +45,14 @@ const instrumentationModules = {
     grpc: {
         modulePath: '@opentelemetry/instrumentation-grpc',
         className: 'GrpcInstrumentation'
+    },
+    pino: {
+        modulePath: '@opentelemetry/instrumentation-pino',
+        className: 'PinoInstrumentation'
+    },
+    winston: {
+        modulePath: '@opentelemetry/instrumentation-winston',
+        className: 'WinstonInstrumentation'
     }
 }
 
