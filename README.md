@@ -81,6 +81,7 @@ const tracer = require('@voodoo.io/tracing-middleware')({
 
 | Version       | Supported     | Tested         |
 |:-------------:|:-------------:|:--------------:|
+| 20.x          | yes           | yes            |
 | 18.x          | yes           | yes            |
 | 16.x          | yes           | yes            |
 
