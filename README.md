@@ -83,7 +83,6 @@ const tracer = require('@voodoo.io/tracing-middleware')({
 |:-------------:|:-------------:|:--------------:|
 | 20.x          | yes           | yes            |
 | 18.x          | yes           | yes            |
-| 16.x          | yes           | yes            |
 
 ## Debug
 ```bash
@@ -109,8 +108,6 @@ Coverage report can be found in coverage/.
 MIT
 
 ## Release 
-
-In order to do the release, at the moment it's done manually, you need to get the publish token from 1password and then bump the version in the package.json file. Then you can run the following command:
 
 ```bash
 npm publish
