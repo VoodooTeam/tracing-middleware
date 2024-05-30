@@ -5,7 +5,7 @@ const { NodeTracerProvider } = require('@opentelemetry/node')
 const { Resource } = require('@opentelemetry/resources')
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions')
 const { registerInstrumentations } = require('@opentelemetry/instrumentation')
-const { JaegerExporter } = require('@opentelemetry/exporter-jaeger')
+const { OTLPTraceExporter } = require('@opentelemetry/exporter-trace-otlp-http')
 const { BatchSpanProcessor } = require('@opentelemetry/tracing')
 
 module.exports = function (config, instrumentations) {
@@ -22,9 +22,7 @@ module.exports = function (config, instrumentations) {
 
     // Initialize the exporter
     const options = {
-        tags: [], // optional
-        endpoint: config.exporterEndpoint,
-        maxPacketSize: 65000 // optional
+        url: config.exporterEndpoint
     }
 
     /**
@@ -34,7 +32,7 @@ module.exports = function (config, instrumentations) {
      * immediately when they end. For most production use cases,
      * OpenTelemetry recommends use of the BatchSpanProcessor.
      */
-    tracerProvider.addSpanProcessor(new BatchSpanProcessor(new JaegerExporter(options)))
+    tracerProvider.addSpanProcessor(new BatchSpanProcessor(new OTLPTraceExporter(options)))
 
     /**
      * Registering the provider with the API allows it to be discovered
