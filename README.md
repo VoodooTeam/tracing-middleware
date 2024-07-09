@@ -75,6 +75,7 @@ const tracer = require('@voodoo.io/tracing-middleware')({
 | instrumentations.fastify   | false                              |                             |
 | instrumentations.lambda    | false                              |                             |
 | instrumentations.grpc      | false                              |                             |
+| instrumentations.winston   | false                              |                             |
 
 ## Compatibility
 
