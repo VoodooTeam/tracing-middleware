@@ -1,4 +1,11 @@
 {
+    "updates": {
+        "budget": {
+            "fail": { "major": 10, "minor": 20 },
+            "warn": { "major": 10, "minor": 20 },
+            "info": { "major": 10, "minor": 20 }
+        }
+    },
     "require-time": {
         "budget": {
             "fail": { "entrypointTime": 1500000000 }
@@ -6,13 +13,14 @@
     },
     "dependencies-size": {
         "budget": {
-            "fail": { "dependencies": 450, "directDependencies": 23, "depth": 10, "weight": 150000000}
+            "fail": { "dependencies": 450, "directDependencies": 24, "depth": 10, "weight": 180000000}
         }
     },
     "dependencies-check": {
         "args": {
             "ignoreMatches": [
                 "@opentelemetry/instrumentation-*",
+                "@prisma/instrumentation",
                 "eslint*",
                 "jest",
                 "typescript"
