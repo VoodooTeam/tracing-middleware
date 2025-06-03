@@ -53,6 +53,10 @@ const instrumentationModules = {
     winston: {
         modulePath: '@opentelemetry/instrumentation-winston',
         className: 'WinstonInstrumentation'
+    },
+    prisma: {
+        modulePath: '@prisma/instrumentation',
+        className: 'PrismaInstrumentation'
     }
 }
 

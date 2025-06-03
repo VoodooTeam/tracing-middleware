@@ -22,6 +22,7 @@ It will instantiate some instrumentation libs in order to catch span for:
 * Redis
 * GraphQL
 * GRPC
+* Prisma
 
 ## Installation
 
@@ -76,6 +77,7 @@ const tracer = require('@voodoo.io/tracing-middleware')({
 | instrumentations.lambda    | false                              |                             |
 | instrumentations.grpc      | false                              |                             |
 | instrumentations.winston   | false                              |                             |
+| instrumentations.prisma    | false                              |                             |
 
 ## Compatibility
 

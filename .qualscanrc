@@ -1,4 +1,15 @@
 {
+    "updates": {
+        "budget": {
+            "fail": { "major": 1 },
+            "warn": { "major": 1 },
+            "info": { "major": 1 }
+        },
+        "exclude": ["eslint", "eslint-config-standard",
+                "eslint-plugin-import", "eslint-plugin-n",
+                "eslint-plugin-promise",
+                 "jest", "fastify", "typescript"]
+    },
     "require-time": {
         "budget": {
             "fail": { "entrypointTime": 1500000000 }
@@ -6,13 +17,14 @@
     },
     "dependencies-size": {
         "budget": {
-            "fail": { "dependencies": 450, "directDependencies": 23, "depth": 10, "weight": 150000000}
+            "fail": { "dependencies": 450, "directDependencies": 24, "depth": 10, "weight": 150000000}
         }
     },
     "dependencies-check": {
         "args": {
             "ignoreMatches": [
                 "@opentelemetry/instrumentation-*",
+                "@prisma/instrumentation",
                 "eslint*",
                 "jest",
                 "typescript"
