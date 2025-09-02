@@ -1,6 +1,6 @@
 {
   "name": "@voodoo.io/tracing-middleware",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Add a middleware to handle tracing with open tracing libs",
   "main": "index.js",
   "bin": "./index.js",
@@ -82,6 +82,7 @@
     "@opentelemetry/resources": "^1.30.0",
     "@opentelemetry/semantic-conventions": "^1.28.0",
     "@opentelemetry/tracing": "^0.24.0",
+    "@prisma/instrumentation": "^6.8.2",
     "debug": "^4.4.0"
   }
 }
