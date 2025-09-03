@@ -62,7 +62,6 @@
   "dependencies": {
     "@opentelemetry/api": "^1.9.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.203.0",
-    "@opentelemetry/instrumentation": "^0.203.0",
     "@opentelemetry/instrumentation-aws-lambda": "^0.54.1",
     "@opentelemetry/instrumentation-aws-sdk": "^0.58.0",
     "@opentelemetry/instrumentation-express": "^0.52.0",
@@ -78,11 +77,9 @@
     "@opentelemetry/instrumentation-pino": "^0.50.1",
     "@opentelemetry/instrumentation-redis": "^0.52.0",
     "@opentelemetry/instrumentation-winston": "^0.48.1",
-    "@opentelemetry/node": "^0.24.0",
     "@opentelemetry/resources": "^2.0.1",
     "@opentelemetry/sdk-node": "^0.203.0",
     "@opentelemetry/semantic-conventions": "^1.37.0",
-    "@opentelemetry/tracing": "^0.24.0",
     "@prisma/instrumentation": "^6.15.0",
     "debug": "^4.4.0"
   }
