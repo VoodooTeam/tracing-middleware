@@ -11,7 +11,6 @@ module.exports = function (config, instrumentations) {
     if (opentelemetry.trace.getTracerProvider() !== opentelemetry.trace.getTracerProvider('default')) {
         log('tracing is already initialized')
     } else {
-
         // Define the service resource using the recommended resourceFromAttributes function
         const resource = resourceFromAttributes({
             [SemanticResourceAttributes.SERVICE_NAME]: config.serviceName,
